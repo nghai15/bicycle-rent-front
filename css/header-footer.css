@@ -103,7 +103,7 @@
 /* Main Navigation Styles */
 #main-nav {
     width: 100%;
-    background: #01853c;
+    background: #03d140;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@
 }
 #main-nav a:hover, #main-nav a:focus {
     background: #fff;
-    color: #01853c;
+    color: #03d140;
     border-radius: 8px 8px 0 0;
 }
 @media (max-width: 900px) {
@@ -209,7 +209,7 @@
 }
 .footer-contact i {
     margin-right: 7px;
-    color: #1877f2;
+    color: #03d140;
     width: 18px;
     text-align: center;
 }
@@ -233,7 +233,7 @@
     font-size: 15px;
 }
 .footer-col ul li a:hover {
-    color: #1741c2;
+    color: #03d140;
     text-decoration: underline;
 }
 .footer-apps {
@@ -285,7 +285,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #0ce94e;
 }
 .footer-col {
     flex: 1;

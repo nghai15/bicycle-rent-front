@@ -15,7 +15,7 @@
 <body>
     <div id="topbar">
         <div class="topbar-left">
-            <a href="index.php">
+            <a href="main.php">
                 <img src="../img/face.jpg" alt="Logo BikeRent" id="logo">
             </a>
             <a href="index.php" class="brand-link">
@@ -55,72 +55,17 @@
     </div>
 </div>
 <script src="../jquery-3.7.1.js"></script>
-<script>
-function updateCartCount() {
-    $.ajax({
-        url: 'cart_api.php',
-        method: 'POST',
-        data: { action: 'get_cart_count' },
-        dataType: 'json',
-        success: function(response) {
-            if (response.success) {
-                $('#cart-count').text(response.count);
-            } else {
-                console.log('Lỗi cập nhật số lượng:', response.message);
-            }
-        },
-        error: function(xhr, status, error) {
-            console.log('Lỗi cập nhật số lượng giỏ hàng:', xhr.status, error, xhr.responseText);
-        }
-    });
-}
-$(document).ready(function() {
-    updateCartCount();
-    $(document).on('cartUpdated', updateCartCount);
-});
-</script>
+
+
 
     <!-- Main bar -->
     <nav id="main-nav">
-        <a href="main.html">TRANG CHỦ</a>
-        <a href="gioithieu.html">GIỚI THIỆU</a>
-        <a href="dichvu.html">DỊCH VỤ</a>
-        <a href="tintuc.html">TIN TỨC</a>
+        <a href="main.php">TRANG CHỦ</a>
+        <a href="gioithieu.php">GIỚI THIỆU</a>
+        <a href="dichvu.php">DỊCH VỤ</a>
+        <a href="tintuc.php">TIN TỨC</a>
     </nav>
     
-    <script>
-        // Load cart count when page loads
-        $(document).ready(function() {
-            updateCartCount();
-        });
-        
-        // Function to update cart count
-        function updateCartCount() {
-            $.ajax({
-                url: 'cart_api.php',
-                method: 'POST',
-                data: { action: 'get_cart_count' },
-                dataType: 'json',
-                success: function(response) {
-                    if (response.success) {
-                        const count = response.count;
-                        const cartCountElement = $('#cart-count');
-                        
-                        if (count > 0) {
-                            cartCountElement.text(count).removeClass('hidden');
-                        } else {
-                            cartCountElement.addClass('hidden');
-                        }
-                    }
-                },
-                error: function() {
-                    console.error('Error loading cart count');
-                }
-            });
-        }
-        
-        // Make updateCartCount available globally
-        window.updateCartCount = updateCartCount;
-    </script>
+
 </body>
 </html>

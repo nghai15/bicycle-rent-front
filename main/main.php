@@ -29,7 +29,7 @@
             <div id="content">
                 <div id="slider">
                 <div class="text-content">
-                <h2 class="text-heading">Cho thuê xe đạp du lịch tại TP HCM</h2>
+                <h1 class="text-heading">Cho thuê xe đạp du lịch tại TP HCM</h1>
                 <div class="text-description">Với những chiếc xe đạp chất lượng, được bảo dưỡng định kỳ, bạn có thể dễ dàng khám phá mọi ngóc ngách của thành phố. Dịch vụ của chúng tôi cung cấp nhiều loại xe phù hợp với nhu cầu của bạn, từ dạo phố thong dong đến những chuyến đi thể dục thể thao.</div>
                 <a href="dichvu.php" class="place-btn">Xem thêm</a>
             </div>

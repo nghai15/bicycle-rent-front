@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+  
+  /* Header */
+  .header {
+    background: #1abc9c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .header .back {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* QR Scan Area */
+  .scanner {
+    background: black;
+    margin: 20px;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+  }
+  .scanner .bike-icon {
+    font-size: 40px;
+    color: #00ff6a;
+    margin-bottom: 15px;
+  }
+  .scanner .scan-box {
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Bottom buttons */
+  .bottom-actions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+  }
+  .circle-btn {
+    width: 60px;
+    height: 60px;
+    background: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Main action buttons */
+  .main-actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .main-actions button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn-green {
+    background: #00c853;
+    color: white;
+  }
+  .btn-white {
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+  }
+  
+  /* Bottom nav */
+  .nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+  .nav-item {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .success-content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 80px; /* chừa chỗ cho nav */
+  }
+  
+  .success-icon {
+    font-size: 60px;
+    color: #00ff6a;
+    margin-top: 30px;
+  }
+  
+  .success-check {
+    font-size: 40px;
+    color: #00ff6a;
+    margin-top: 10px;
+  }
+  
+  .success-text {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+  }
+  
+  .map-container.big-map {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00ff6a;
+  }
+  
+  .btn-start {
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
